@@ -20,6 +20,8 @@ Route::any('/find_law', 'FindLawController@FindLaw');
 
 //常识
 Route::any('/commons', 'CommonsController@Commons');
+//常识详情
+Route::any('/CommonsDetail', 'CommonsController@CommonsDetail');
 
 //个人中心
 Route::any('/mys', 'MyController@My');
