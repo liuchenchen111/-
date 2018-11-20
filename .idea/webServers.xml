@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="88c42363-8e89-41df-a49d-2cd3c07d26b6" name="180.76.112.119" url="http://180.76.112.119">
+        <fileTransfer host="180.76.112.119" port="22" privateKey="C:\Users\柴源\Documents\baiduyun-k-KYewRfR1.txt" rootFolder="/data/wwwroot/default/law" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
