@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Cookie;
 
 class CommonsController extends Controller
 {
+    //法律常识
     public function Commons(){
         $db = DB::table('law')->where(['status'=>1])->orderByDesc('clicks')->limit(5)->get();
         $data = json_decode(json_encode($db),true);
@@ -32,6 +33,11 @@ class CommonsController extends Controller
         }else{
             return ['status'=>100,'msg'=>'评论失败'];
         }
+    }
+
+    //法律常识详情页
+    public function CommonsDetail(){
+        return view( 'commons_detail' );
     }
 }
 ?>

@@ -40,20 +40,52 @@
         <div class="tab-hot-bar mt15">
             <div id="slider" class="mui-slider">
                 <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control">
+<<<<<<< HEAD
                  
+=======
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
                 </div>
 
                 <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
 
                 <div id="sliderGroup" class="mui-slider-group">
                     <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
                         <ul>
                             @foreach($data as $v)
                             <li>
+<<<<<<< HEAD
                                 <a href="/CommonsDetail?id=1">{{$v['title']}}</a>
                                 <i class="icon-hualv icon-bianqian ml10"></i>
                             </li>
                             @endforeach
+=======
+                                <a href="/CommonsDetail">不予起诉的条件是什么</a>
+                                <i class="icon-hualv icon-bianqian ml10"></i>
+                            </li>
+
+                            <li>
+                                <a href="/CommonsDetail">保释期间对自由有限制吗</a>
+                                <i class="icon-hualv icon-bianqian ml10"></i>
+                            </li>
+
+                            <li>
+                                <a href="/CommonsDetail">保释期间能出远门吗</a>
+                            </li>
+
+                            <li>
+                                <a href="/CommonsDetail">C1驾照验审材料有哪些</a>
+                            </li>
+
+                            <li>
+                                <a href="/CommonsDetail">2016伤残军人的护理费标准如何规定</a>
+                            </li>
+
+                            <li>
+                                <a href="/CommonsDetail">保释期间跑了有什么后果</a>
+                            </li>
+
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
                         </ul>
 
                         <a href="javascript:void(0)" class="more-btn more-btn-bortop mt10">查看更多常识</a>

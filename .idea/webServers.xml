@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+<<<<<<< HEAD
+      <webServer id="c0aeeaed-82d4-4409-8b20-d1589b85a111" name="law" url="http://132.232.50.86">
+        <fileTransfer host="132.232.50.86" port="22" rootFolder="/data/wwwroot/default/law" accessType="SFTP" password="dfc6dfd3df9adf9bdf9adf9ddf98df9c" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+=======
+      <webServer id="88c42363-8e89-41df-a49d-2cd3c07d26b6" name="180.76.112.119" url="http://180.76.112.119">
+        <fileTransfer host="180.76.112.119" port="22" privateKey="C:\Users\柴源\Documents\baiduyun-k-KYewRfR1.txt" rootFolder="/data/wwwroot/default/law" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+>>>>>>> 41f0468612155e2a888720cde05ed0993cb6e123
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
