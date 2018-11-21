@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="PublishConfigData" autoUpload="On explicit save action" serverName="law">
     <serverData>
       <paths name="law">
+=======
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="180.76.112.119">
+    <serverData>
+      <paths name="180.76.112.119">
+>>>>>>> 41f0468612155e2a888720cde05ed0993cb6e123
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
