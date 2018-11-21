@@ -9,7 +9,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="{{url('lawlogin/css/gongyong.css')}}">
 
-
+    <script src="{{URL::asset('layui/layui.js')}}"></script>
+    <script src="{{URL::asset('jquery-3.2.1.min.js')}}"></script>
 </head>
 
 <body>

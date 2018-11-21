@@ -15,7 +15,7 @@
             <div class="aui-my-info">
                 <div class="aui-my-info-back"></div>
                 <a href="javascript:;" class="">
-                    <img src="{{ url('my/images/icon-png/my-aw.jpg' ) }}" class="aui-my-avatar">
+                    <img src="{{$img}}" class="aui-my-avatar">
                 </a>
                 <div class="aui-mt-location aui-l-red"></div>
             </div>
