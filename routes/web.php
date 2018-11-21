@@ -33,14 +33,14 @@ Route::any('/mys', 'MyController@My');
 
 //律师注册
 Route::any('/law_login', 'LawLoginController@LawLogin');
-<<<<<<< HEAD
+
 Route::any('/student', 'OnlineController@student');
-=======
+
 Route::any('/law_login_do', 'LawLoginController@LawLogin_do');
 Route::any('/law_register', 'LawLoginController@LawRegister');
 Route::any('/law_register_do', 'LawLoginController@LawRegister_do');
 Route::any('/email', 'LawLoginController@email');
->>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
+
 
 
 
