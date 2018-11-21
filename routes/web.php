@@ -28,6 +28,10 @@ Route::any('/mys', 'MyController@My');
 
 //律师注册
 Route::any('/law_login', 'LawLoginController@LawLogin');
+Route::any('/law_login_do', 'LawLoginController@LawLogin_do');
+Route::any('/law_register', 'LawLoginController@LawRegister');
+Route::any('/law_register_do', 'LawLoginController@LawRegister_do');
+Route::any('/email', 'LawLoginController@email');
 
 
 
