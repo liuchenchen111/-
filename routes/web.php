@@ -21,11 +21,17 @@ Route::any('/find_law', 'FindLawController@FindLaw');
 //常识
 Route::any('/commons', 'CommonsController@Commons');
 
+
+Route::any('/CommonsDetail', 'CommonsController@CommonsDetail');
+
+Route::any('/insertClick', 'CommonsController@insertClick');
+
 //个人中心
 Route::any('/mys', 'MyController@My');
 
 //律师注册
 Route::any('/law_login', 'LawLoginController@LawLogin');
+Route::any('/student', 'OnlineController@student');
 
 
 

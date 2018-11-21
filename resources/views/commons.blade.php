@@ -36,12 +36,11 @@
     </div>
 
     <div class="pt20 bg-fff box-shadow mt10">
-        <p class="h35-title">热门内容</p>
+        <p class="h35-title">热门常识</p>
         <div class="tab-hot-bar mt15">
             <div id="slider" class="mui-slider">
-                <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-                    <a class="mui-control-item mui-active" href="javascript:void(0)">热门常识</a>
-                    <a class="mui-control-item" href="javascript:void(0)">热门咨询</a>
+                <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control">
+                 
                 </div>
 
                 <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
@@ -49,68 +48,16 @@
                 <div id="sliderGroup" class="mui-slider-group">
                     <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
                         <ul>
+                            @foreach($data as $v)
                             <li>
-                                <a href="javascript:void(0)">不予起诉的条件是什么</a>
+                                <a href="/CommonsDetail?id=1">{{$v['title']}}</a>
                                 <i class="icon-hualv icon-bianqian ml10"></i>
                             </li>
-
-                            <li>
-                                <a href="javascript:void(0)">保释期间对自由有限制吗</a>
-                                <i class="icon-hualv icon-bianqian ml10"></i>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">保释期间能出远门吗</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">C1驾照验审材料有哪些</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">2016伤残军人的护理费标准如何规定</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">保释期间跑了有什么后果</a>
-                            </li>
-
+                            @endforeach
                         </ul>
 
                         <a href="javascript:void(0)" class="more-btn more-btn-bortop mt10">查看更多常识</a>
 
-                    </div>
-
-                    <div id="item2mobile" class="mui-slider-item mui-control-content">
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0)">您好，我是一个摩的司机被县城运管所抓住当时乘载一人说我非法营运罚款20</a>
-                                <i class="icon-hualv icon-bianqian ml10"></i>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">在XX网上找暑假兼职工作，一家中介公司回复我，帮我找工作，然后要交三</a>
-                                <i class="icon-hualv icon-bianqian ml10"></i>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">虎牙撞掉一颗赔多少钱，牙齿换了，</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">脚后跟粉碎性骨折打钢板，我也没与老板签劳务和同，老板也没有给我买保险，</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">酒驾超速造成她人重伤，司机全责，要拘留多</a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0)">两名16岁少年偷气油被抓后道歉，第二天取麾托物业不给</a>
-                            </li>
-                        </ul>
-
-                        <a href="javascript:void(0)" class="more-btn more-btn-bortop mt10">查看更多咨询</a>
                     </div>
                 </div>
             </div>
