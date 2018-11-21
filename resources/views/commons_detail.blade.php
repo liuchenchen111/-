@@ -20,6 +20,16 @@
     </div>
 </div>
 <div class="ipr-de-cat">
+<<<<<<< HEAD
+    <h3 class="title">{{$data['title']}}</h3>
+    <p class="clear"><span>2015-2-15 12:30</span><span>发布者：{{$data['author']}}</span></p>
+    <div class="content">
+        <p>{{$data['content']}}</p><br/>
+    </div>
+</div>
+&nbsp;&nbsp;&nbsp;<span>评论区：</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="content" cols="10" rows="20"></textarea><span>发表</span>
+=======
     <h3 class="title">【案件速递】必看，2015年10大投资陷阱</h3>
     <p class="clear"><span>2015-2-15 12:30</span><span>发布者：黄兴</span><span>来自：上海知识产权研究所</span><span>关键字：投资</span></p>
     <div class="content">
@@ -44,6 +54,7 @@
         <p>在众多媒体报道的同时，协力所的主管单位——浦东新区司法局也对学院的成立给予了关注。</p><br/>
     </div>
 </div>
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
 <div class="footer">
     <p>上海知识产权研究所版权所有</p>
     <P>邮件：123@gmail.com</P>
@@ -52,4 +63,96 @@
     <p>电话：021-12345678</p>
 </div>
 </body>
+<<<<<<< HEAD
 </html>
+<script src="/home/jquery.min.js"></script>
+<script type="text/javascript">
+    var caution=false
+    function setCookie(name,value,expires,path,domain,secure)
+    {
+        var curCookie=name+"="+escape(value) +
+                ((expires)?";expires="+expires.toGMTString() : "") +
+                ((path)?"; path=" + path : "") +
+                ((domain)? "; domain=" + domain : "") +
+                ((secure)?";secure" : "")
+        if(!caution||(name + "=" + escape(value)).length <= 4000)
+        {
+            document.cookie = curCookie
+        }
+        else if(confirm("Cookie exceeds 4KB and will be cut!"))
+        {
+            document.cookie = curCookie
+        }
+    }
+    function getCookie(name)
+    {
+        var prefix = name + "="
+        var cookieStartIndex = document.cookie.indexOf(prefix)
+        if (cookieStartIndex == -1)
+        {
+            return null
+        }
+        var cookieEndIndex=document.cookie.indexOf(";",cookieStartIndex+prefix.length)
+        if(cookieEndIndex == -1)
+        {
+            cookieEndIndex = document.cookie.length
+        }
+        return unescape(document.cookie.substring(cookieStartIndex+prefix.length,cookieEndIndex))
+    }
+    function deleteCookie(name, path, domain)
+    {
+        if(getCookie(name))
+        {
+            document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+        }
+    }
+    function fixDate(date)
+    {
+        var base=new Date(0);
+        var skew=base.getTime();
+        if(skew>0)
+        {
+            date.setTime(date.getTime()-skew)
+        }
+    }
+    var now=new Date();
+    fixDate(now);
+    now.setTime(now.getTime()+365 * 24 * 60 * 60 * 1000);
+    var visits = getCookie("counter");
+    if(!visits)
+    {
+        visits=1;
+    }
+    else
+    {
+        visits=parseInt(visits)+1;
+    }
+    setCookie("counter", visits, now);
+    $.ajax({
+        url:'/insertClick',
+        data:'visits='+visits+'&_token='+'{{csrf_token()}}'+'&law_id='+"{{$data['law_id']}}",
+        type:'post',
+        dataType:'json'
+    });
+    var content = $('[name=content]').val();
+    $.ajax({
+        url:'/insertComment',
+        data:'visits='+content+'&_token='+'{{csrf_token()}}',
+        type:'post',
+        dataType:'json',
+        success:function(json_info){
+            if(json_info.status==100){
+                alert(json_info.msg);
+                window.location.href='/CommonsDetail';
+            }else{
+                alert(json_info.msg);
+            }
+        }
+    })
+</script>
+=======
+</html>
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317

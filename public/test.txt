@@ -1,0 +1,10 @@
+Array
+(
+)
+Array
+(
+    [signature] => 017234e3d8deca706ae9a3371e45111f82a19b20
+    [echostr] => 3528700026256514008
+    [timestamp] => 1542347600
+    [nonce] => 1087919468
+)

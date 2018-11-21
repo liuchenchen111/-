@@ -40,6 +40,10 @@
         <div class="tab-hot-bar mt15">
             <div id="slider" class="mui-slider">
                 <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control">
+<<<<<<< HEAD
+                 
+=======
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
                 </div>
 
                 <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
@@ -48,7 +52,14 @@
                     <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
 
                         <ul>
+                            @foreach($data as $v)
                             <li>
+<<<<<<< HEAD
+                                <a href="/CommonsDetail?id=1">{{$v['title']}}</a>
+                                <i class="icon-hualv icon-bianqian ml10"></i>
+                            </li>
+                            @endforeach
+=======
                                 <a href="/CommonsDetail">不予起诉的条件是什么</a>
                                 <i class="icon-hualv icon-bianqian ml10"></i>
                             </li>
@@ -74,6 +85,7 @@
                                 <a href="/CommonsDetail">保释期间跑了有什么后果</a>
                             </li>
 
+>>>>>>> bc10642632cd058ed4ff4c44c1f065899689d317
                         </ul>
 
                         <a href="javascript:void(0)" class="more-btn more-btn-bortop mt10">查看更多常识</a>
